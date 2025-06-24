@@ -1,0 +1,8 @@
+[app]
+name = "make-a-task-management1234-dbwz8a"
+
+[build]
+builder = "Dockerfile"
+
+[experimental]
+cmdline = ["flyctl"]
