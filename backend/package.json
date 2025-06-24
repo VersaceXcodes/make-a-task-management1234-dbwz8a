@@ -1,18 +1,21 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "description": "Backend for application",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest"
   },
   "dependencies": {
     "express": "^4.17.1",
     "dotenv": "^10.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7",
-    "typescript": "^4.1.3"
+    "typescript": "^4.5.4",
+    "jest": "^27.3.1",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.9"
   }
 }
