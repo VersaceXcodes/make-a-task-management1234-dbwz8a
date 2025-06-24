@@ -1,13 +1,13 @@
 import { defineConfig } from 'vite';
-import reactRefresh from '@vitejs/plugin-react-refresh';
-import tsconfigPaths from 'vite-tsconfig-paths';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [reactRefresh(), tsconfigPaths()],
+  plugins: [react()],
   resolve: {
     alias: {
-      '@': '/path/to/correctly/point/to/source',
-    },
-  },
+      '@': path.resolve(__dirname, 'src')
+    }
+  }
 });
