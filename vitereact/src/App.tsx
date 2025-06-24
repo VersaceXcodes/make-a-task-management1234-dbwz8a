@@ -1,4 +1,14 @@
-// Ensure the import path matches the actual file location and case
-import GV_GlobalSidebar from './components/ui/gv_globalSidebar';
+import React from 'react';
 
-// Rest of the App.tsx file content here
+// Your App component implementation
+const App: React.FC = () => {
+  // Component logic goes here
+  return (
+    <div>
+      {/* Your component JSX */}
+      <h1>Hello, World!</h1>
+    </div>
+  );
+};
+
+export default App;
